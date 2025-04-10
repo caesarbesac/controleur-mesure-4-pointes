@@ -9,6 +9,8 @@ import pyvisa
 import sys
 import csv
 
+# !!! Change the path of the dewesoft config path (line 52)
+
 ENABLE_MONODAQ = True
 
 class StateMachine:
@@ -47,7 +49,7 @@ class StateMachine:
         self.regression_line = 0
 
         self.pressureLimits = [4500, 5500]
-        self.setupPath = r"C:\Users\33618\Desktop\cours\IUT\Projet slovénie\projet summer camp\setups dewesoftx\test 1.dxs"
+        self.setupPath = r"absolute path of the dewesoftx config path"
 
         self.tempFileNbr = 0
         self.csvFiles = []
